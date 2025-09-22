@@ -68,13 +68,9 @@ This project is developed only by me. No external collaborations. 💯
 
 📬 Contact
 
-📧 Email: your-email@example.com
+📧 Email:raosamilarr02@gmail.com
 
-🔗 GitHub: your-username
+🔗 GitHub: Raobdk
 
 
 ---
-
-👉 Bas `your-username` aur `your-repo-name` apne hisaab se change kar lena.  
-
-Chaho to main tumhare liye **super stylish README badges (shields.io)** bhi add kar du (like `Made with ❤️ by S
