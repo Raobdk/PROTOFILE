@@ -1,13 +1,4 @@
 
-Clone & run karne ke steps ho 👨‍💻
-
-images/ folder ka mention ho 📂
-
-Emojis ka use ho 😍
-
-"Company" & "Collaboration" section me sirf tumhara naam ho 🕶️
-
-Yeh lo ready-to-use README.md 👇
 
 # 🌐 Personal Portfolio  
 
