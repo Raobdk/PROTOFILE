@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | Sami Ullah</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .dark .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #34d399);
+        }
+        .prose {
+            max-width: 65ch;
+        }
+        .prose h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .prose h3 {
+            font-size: 1.25em;
+            font-weight: 600;
+            margin-top: 1.25em;
+            margin-bottom: 0.5em;
+        }
+        .prose p {
+            margin-bottom: 1em;
+        }
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5em;
+            margin-bottom: 1em;
+        }
+        .prose li {
+            margin-bottom: 0.5em;
+        }
+        .prose pre {
+            background-color: #f3f4f6;
+            padding: 1em;
+            border-radius: 0.5em;
+            overflow-x: auto;
+            margin-bottom: 1.5em;
+        }
+        .dark .prose pre {
+            background-color: #374151;
+        }
+        .prose code {
+            font-family: monospace;
+            background-color: #f3f4f6;
+            padding: 0.2em 0.4em;
+            border-radius: 0.2em;
+            font-size: 0.9em;
+        }
+        .dark .prose code {
+            background-color: #374151;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold gradient-text">Sami Ullah</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Home</a>
+                    <a href="index.html#projects" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Projects</a>
+                    <a href="index.html#skills" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Skills</a>
+                    <a href="index.html#blog" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Blog</a>
+                    <a href="index.html#contact" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 pb-4 px-4 shadow-lg">
+            <a href="index.html#home" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Home</a>
+            <a href="index.html#projects" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Projects</a>
+            <a href="index.html#skills" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Skills</a>
+            <a href="index.html#blog" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Blog</a>
+            <a href="index.html#contact" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Blog Post Header -->
+    <header class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center" data-aos="fade-up">
+            <div class="inline-block px-3 py-1 bg-blue-100 dark:bg-emerald-900 text-blue-600 dark:text-emerald-400 rounded-full text-sm font-medium mb-4">
+                Category
+            </div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">
+                <span class="gradient-text">Blog Post Title</span>
+            </h1>
+            <div class="flex items-center justify-center space-x-4 text-gray-600 dark:text-gray-400">
+                <span>Sami Ullah</span>
+                <span>•</span>
+                <span>Month Day, Year</span>
+                <span>•</span>
+                <span>X min read</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Image -->
+    <div class="mb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" data-aos="fade-up">
+        <div class="rounded-xl overflow-hidden shadow-lg">
+            <img src="http://static.photos/technology/1200x630/60" alt="Featured Image" class="w-full h-auto">
+        </div>
+    </div>
+
+    <!-- Blog Post Content -->
+    <article class="pb-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+        <div class="prose dark:prose-invert" data-aos="fade-up">
+            <p class="lead">
+                Start with an engaging introduction that captures the reader's attention. Explain what the article is about and why it's important or interesting.
+            </p>
+            
+            <h2>First Section Heading</h2>
+            <p>
+                Begin the main content of your article. Break it down into logical sections with clear headings. Use paragraphs to separate different ideas.
+            </p>
+            
+            <p>
+                Provide detailed explanations, examples, and insights. The more valuable information you can share, the better your article will be.
+            </p>
+            
+            <h3>Subsection Heading</h3>
+            <p>
+                When discussing technical topics, consider including code snippets or diagrams to illustrate your points.
+            </p>
+            
+            <pre><code class="language-python"># Example code snippet
+def example_function(param):
+    """Docstring explaining what this function does."""
+    # Implementation details
+    return result</code></pre>
+            
+            <h2>Another Section</h2>
+            <p>
+                Use lists to break down complex information into digestible chunks:
+            </p>
+            
+            <ul>
+                <li>Key point or step #1</li>
+                <li>Key point or step #2</li>
+                <li>Key point or step #3</li>
+            </ul>
+            
+            <p>
+                Include relevant images or diagrams when helpful:
+            </p>
+            
+            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md my-6">
+                <img src="http://static.photos/technology/640x360/61" alt="Diagram" class="w-full h-auto">
+                <p class="text-center text-sm text-gray-500 dark:text-gray-400 mt-2">Caption explaining the diagram</p>
+            </div>
+            
+            <h2>Conclusion</h2>
+            <p>
+                Summarize the key takeaways from your article. What should readers remember or do after reading? You can also suggest next steps or additional resources.
+            </p>
+        </div>
+        
+        <!-- Tags -->
+        <div class="mt-12 flex flex-wrap gap-2" data-aos="fade-up">
+            <span class="px-3 py-1 bg-blue-100 dark:bg-emerald-900 text-blue-600 dark:text-emerald-400 rounded-full text-sm font-medium">
+                Tag 1
+            </span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-emerald-900 text-blue-600 dark:text-emerald-400 rounded-full text-sm font-medium">
+                Tag 2
+            </span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-emerald-900 text-blue-600 dark:text-emerald-400 rounded-full text-sm font-medium">
+                Tag 3
+            </span>
+        </div>
+        
+        <!-- Author Bio -->
+        <div class="mt-12 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg" data-aos="fade-up">
+            <div class="flex items-center">
+                <div class="mr-4">
+                    <img src="http://static.photos/technology/200x200/42" alt="Sami Ullah" class="w-16 h-16 rounded-full">
+                </div>
+                <div>
+                    <h3 class="font-bold">Sami Ullah</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">
+                        DevOps & Cybersecurity Enthusiast. Building secure, automated, and scalable systems with a passion for technology and innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Comments Section -->
+        <div class="mt-12" data-aos="fade-up">
+            <h3 class="text-xl font-bold mb-6">Comments</h3>
+            <div class="space-y-6">
+                <!-- Comment Form -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h4 class="font-bold mb-4">Leave a Comment</h4>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500 focus:border-blue-500 dark:focus:border-emerald-500 bg-white dark:bg-gray-700">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500 focus:border-blue-500 dark:focus:border-emerald-500 bg-white dark:bg-gray-700">
+                        </div>
+                        <div>
+                            <label for="comment" class="block mb-2">Comment</label>
+                            <textarea id="comment" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 dark:focus:ring-emerald-500 focus:border-blue-500 dark:focus:border-emerald-500 bg-white dark:bg-gray-700"></textarea>
+                        </div>
+                        <button type="submit" class="px-4 py-2 bg-blue-600 dark:bg-emerald-600 text-white rounded hover:bg-blue-700 dark:hover:bg-emerald-700 transition">
+                            Post Comment
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Existing Comments -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Commenter" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <div class="flex items-center">
+                                <h5 class="font-bold mr-2">John Doe</h5>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2 days ago</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mt-1">
+                                Great article! Really helped me understand the topic better. Looking forward to more content like this.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="github"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="youtube"></i>
+            </a>
+        </div>
+        <p class="text-gray-500 dark:text-gray-400">
+            &copy; 2023 Sami Ullah. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+Additional Notes:
+
+1. **Color Palette & Theme**: 
+   - Primary: Dark blue (#3b82f6) and emerald green (#10b981) gradient
+   - Dark mode: Light blue (#60a5fa) and light green (#34d399) gradient
+   - Background: Light gray (#f9fafb) in light mode, dark gray (#111827) in dark mode
+   - Text: Dark gray (#1f2937) in light mode, light gray (#e5e7eb) in dark mode
+
+2. **Project Description Template**:
+markdown
+## Project Title
+**Category**: [DevOps/Cybersecurity/Game Dev/Programming]  
+**Date**: [Month Year]  
+**Status**: [Completed/Ongoing]  
+
+### The Problem
+[Describe the problem or challenge this project addresses]
+
+### The Solution
+[Explain your solution and how it solves the problem]
+
+### Key Features
+- Feature 1: [Description]
+- Feature 2: [Description]
+- Feature 3: [Description]
+
+### Technologies Used
+- [Technology 1]
+- [Technology 2]
+- [Technology 3]
+
+### Challenges & Solutions
+[Describe any technical challenges you faced and how you overcame them]
+
+### Lessons Learned
+[What you learned from this project]
+
+### Future Improvements
+[Potential enhancements or features you'd like to add]
+
+### Demo & Source Code
+- [Live Demo](#)
+- [GitHub Repository](#)
+
+
+3. **Future Project Ideas**:
+   - Automated Security Scanning Tool
+   - Kubernetes Cluster Monitoring Dashboard
+   - Multiplayer Online Game with WebSockets
+   - AI-powered Code Review Assistant
+   - Cybersecurity Threat Intelligence Dashboard
+   - Infrastructure as Code (

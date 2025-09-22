@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Template | Sami Ullah</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .dark .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #34d399);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-md z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold gradient-text">Sami Ullah</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Home</a>
+                    <a href="index.html#projects" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Projects</a>
+                    <a href="index.html#skills" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Skills</a>
+                    <a href="index.html#blog" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Blog</a>
+                    <a href="index.html#contact" class="hover:text-blue-500 dark:hover:text-emerald-400 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 pb-4 px-4 shadow-lg">
+            <a href="index.html#home" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Home</a>
+            <a href="index.html#projects" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Projects</a>
+            <a href="index.html#skills" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Skills</a>
+            <a href="index.html#blog" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Blog</a>
+            <a href="index.html#contact" class="block py-2 hover:text-blue-500 dark:hover:text-emerald-400 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center" data-aos="fade-up">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">
+                <span class="gradient-text">Project Title</span>
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+                A brief one-line description of what the project is about
+            </p>
+        </div>
+    </header>
+
+    <!-- Project Content -->
+    <main class="pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <!-- Project Overview -->
+        <section class="mb-16" data-aos="fade-up">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+                    <div class="prose dark:prose-invert max-w-none">
+                        <p>
+                            Provide a detailed overview of the project. Explain what it does, why you built it, and what problems it solves.
+                            This is where you can elaborate on the motivation behind the project and its core functionality.
+                        </p>
+                        <p>
+                            Describe the technologies used and any interesting challenges you faced during development.
+                            Highlight any unique features or innovative solutions you implemented.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-bold mb-4">Project Details</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <span class="font-medium">Category:</span> DevOps / Cybersecurity / Game Dev
+                        </li>
+                        <li>
+                            <span class="font-medium">Date:</span> Month Year
+                        </li>
+                        <li>
+                            <span class="font-medium">Technologies:</span> List of main technologies
+                        </li>
+                        <li>
+                            <span class="font-medium">Status:</span> Completed / Ongoing
+                        </li>
+                    </ul>
+                    <div class="mt-6 space-y-3">
+                        <a href="#" class="block w-full px-4 py-2 bg-blue-600 dark:bg-emerald-600 text-white rounded hover:bg-blue-700 dark:hover:bg-emerald-700 transition text-center">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/Raobdk" target="_blank" rel="noopener noreferrer" class="block w-full px-4 py-2 border border-blue-600 dark:border-emerald-600 text-blue-600 dark:text-emerald-400 rounded hover:bg-blue-50 dark:hover:bg-gray-800 transition text-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem & Solution -->
+        <section class="mb-16" data-aos="fade-up">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">The Problem</h2>
+                    <div class="prose dark:prose-invert max-w-none">
+                        <p>
+                            Describe the specific problem or challenge that this project addresses. What pain points does it solve?
+                            You can mention industry-wide issues or personal frustrations that led you to create this solution.
+                        </p>
+                        <p>
+                            Be specific about the limitations of existing solutions and why they weren't adequate for your needs.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">The Solution</h2>
+                    <div class="prose dark:prose-invert max-w-none">
+                        <p>
+                            Explain how your project solves the problem you described. What makes your approach unique or better than existing solutions?
+                        </p>
+                        <p>
+                            Highlight the key features and benefits of your solution. How does it improve upon what already exists?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features & Screenshots -->
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-8 text-center">Key Features</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 dark:text-emerald-400 mb-4">
+                        <i data-feather="zap" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Feature One</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Brief description of this feature and its benefits. What does it enable users to do?
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 dark:text-emerald-400 mb-4">
+                        <i data-feather="shield" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Feature Two</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Brief description of this feature and its benefits. What does it enable users to do?
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 dark:text-emerald-400 mb-4">
+                        <i data-feather="bar-chart-2" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Feature Three</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Brief description of this feature and its benefits. What does it enable users to do?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Gallery -->
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-8 text-center">Screenshots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="http://static.photos/technology/640x360/50" alt="Screenshot 1" class="w-full h-auto">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="http://static.photos/technology/640x360/51" alt="Screenshot 2" class="w-full h-auto">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="http://static.photos/technology/640x360/52" alt="Screenshot 3" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Details -->
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4">Technical Implementation</h2>
+            <div class="prose dark:prose-invert max-w-none">
+                <p>
+                    Dive deeper into the technical aspects of your project. Explain your architecture, design decisions, and any interesting algorithms or patterns you used.
+                </p>
+                <p>
+                    You can include code snippets, diagrams, or flowcharts to illustrate your implementation. Discuss challenges you faced and how you overcame them.
+                </p>
+                
+                <h3 class="text-xl font-bold mt-6">Code Example</h3>
+                <pre class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg overflow-x-auto"><code class="language-javascript">// Example code snippet
+function exampleFunction(param) {
+    // Implementation details
+    return result;
+}</code></pre>
+                
+                <h3 class="text-xl font-bold mt-6">Architecture Diagram</h3>
+                <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">
+                    <img src="http://static.photos/technology/640x360/53" alt="Architecture Diagram" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="mb-16" data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4">Lessons Learned</h2>
+            <div class="prose dark:prose-invert max-w-none">
+                <p>
+                    Reflect on what you learned from this project. What skills did you improve? What would you do differently next time?
+                </p>
+                <p>
+                    Share any unexpected challenges you encountered and how you grew as a developer through this experience.
+                </p>
+            </div>
+        </section>
+
+        <!-- Future Improvements -->
+        <section data-aos="fade-up">
+            <h2 class="text-2xl font-bold mb-4">Future Improvements</h2>
+            <div class="prose dark:prose-invert max-w-none">
+                <p>
+                    Outline potential future enhancements or features you'd like to add to the project. This shows that you're thinking about the long-term evolution of your work.
+                </p>
+                <ul>
+                    <li>Feature or improvement idea #1</li>
+                    <li>Feature or improvement idea #2</li>
+                    <li>Feature or improvement idea #3</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://github.com/Raobdk" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="github"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-500 dark:hover:text-emerald-400 transition">
+                <i data-feather="youtube"></i>
+            </a>
+        </div>
+        <p class="text-gray-500 dark:text-gray-400">
+            &copy; 2023 Sami Ullah. All rights reserved.
+        </p>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
